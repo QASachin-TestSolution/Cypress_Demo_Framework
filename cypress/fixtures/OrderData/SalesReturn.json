@@ -1,0 +1,39 @@
+{
+    "Customer":"Al Badar Pharmacy (Shj)-Rolla",
+    "Category":"JUL - JDS ABD(02)",
+    "ReturnType":"Replacement",
+    "GoodsCollected":"yes",
+
+    "WantToChangeDefaultShippingDate":"NO",
+    "ShippingDate":"30-09-2021",
+
+    "CustomerPoNo":"12345",
+    "Customeremarks":"Customer Test Remarks",
+    "CustomerRefNo":"CustRef10",
+    "InvoiceRefNo":"InvRef10",
+    "SkipConsolidation":"No",
+    "WholeSaleOrder":"yes",
+    "OrderQty":"100",
+    "LotNo":"77",
+    "WantToChangeDefaultExpiryDate":"YES",
+    "ExpiryDate":"20-09-2022",
+    "ReturnReason":"Damaged",
+    "Reason":"Reasonfor",
+    "BounsQtyExist":"Yes",
+    "BonusQty":"10",
+    "invoiceNo":"InvNo10",
+    "Product":"UB108",
+    "Productverify":"### MINI CHOC DIGESTIVE MP 8X6X25GMS",
+    "ProductRemark":"No Remark",
+    
+    
+    "WantToChangeDefaultStartDateTODate":"NO",
+    "StartDate":"16-09-2021",
+    "EndDate":"17-09-2021",
+
+    "SearchByOrg" :"Site - 5831",
+    "SearchByFSR" :"Rashid"
+     
+
+
+}

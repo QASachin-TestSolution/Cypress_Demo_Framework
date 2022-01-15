@@ -1,0 +1,236 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Testing New Message functionality",
+    "children" : [ {
+      "name" : "Sending New Message to user from admin",
+      "uid" : "be92db3bb5bc12a0",
+      "parentUid" : "27afa38c0354b768d6aa7ace8f4f0d52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816131449,
+        "stop" : 1632816268781,
+        "duration" : 137332
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Verifying that user received the message",
+      "uid" : "da94f7092ce19892",
+      "parentUid" : "27afa38c0354b768d6aa7ace8f4f0d52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816268970,
+        "stop" : 1632816292831,
+        "duration" : 23861
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "27afa38c0354b768d6aa7ace8f4f0d52"
+  }, {
+    "name" : "Creating PushNotification",
+    "children" : [ {
+      "name" : "Sending push Notificaion to user",
+      "uid" : "442dc347d7e20c02",
+      "parentUid" : "0747f93a3fe588768c8af0416f59e3af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816309254,
+        "stop" : 1632816387070,
+        "duration" : 77816
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0747f93a3fe588768c8af0416f59e3af"
+  }, {
+    "name" : "Testing Login Functionality of Salesworx",
+    "children" : [ {
+      "name" : "Testing Valid Login",
+      "uid" : "d8c906b46a01411",
+      "parentUid" : "061ea5774795309dca0e14b1782cf9db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816405826,
+        "stop" : 1632816441540,
+        "duration" : 35714
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Testing Invalid Password",
+      "uid" : "af857c720961815e",
+      "parentUid" : "061ea5774795309dca0e14b1782cf9db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816441714,
+        "stop" : 1632816451466,
+        "duration" : 9752
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Testing Invalid Username",
+      "uid" : "d21ae7005ce2c3d9",
+      "parentUid" : "061ea5774795309dca0e14b1782cf9db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816451538,
+        "stop" : 1632816460230,
+        "duration" : 8692
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "061ea5774795309dca0e14b1782cf9db"
+  }, {
+    "name" : "Testing create order functionality",
+    "children" : [ {
+      "name" : "Creating New Order Entry",
+      "uid" : "86cbcbdc4da257c4",
+      "parentUid" : "24f20747391e371f54ed52299307f900",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816483654,
+        "stop" : 1632816635961,
+        "duration" : 152307
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Verify Order from order reports at admin side",
+      "uid" : "b64f932e2c22e87c",
+      "parentUid" : "24f20747391e371f54ed52299307f900",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816636684,
+        "stop" : 1632816728649,
+        "duration" : 91965
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "24f20747391e371f54ed52299307f900"
+  }, {
+    "name" : "Testing Editing Order functionality",
+    "children" : [ {
+      "name" : "Editing Order",
+      "uid" : "9e0a12b4c4905c5",
+      "parentUid" : "3ede4dfbd1b11e4f5f892cda43526be6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816773109,
+        "stop" : 1632816882550,
+        "duration" : 109441
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3ede4dfbd1b11e4f5f892cda43526be6"
+  }, {
+    "name" : "Testing Bonus Order functionality",
+    "children" : [ {
+      "name" : "Creatng Bonus Order",
+      "uid" : "e4e836e308334fb8",
+      "parentUid" : "c6a2938fc8547e5fe81fef731f0be11f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632816917378,
+        "stop" : 1632817041722,
+        "duration" : 124344
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Verify Order from order reports at admin side",
+      "uid" : "e44a93ed74b25eab",
+      "parentUid" : "c6a2938fc8547e5fe81fef731f0be11f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632817042116,
+        "stop" : 1632817123534,
+        "duration" : 81418
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c6a2938fc8547e5fe81fef731f0be11f"
+  }, {
+    "name" : "Testing Order template functionality",
+    "children" : [ {
+      "name" : "Creatng Order using Order Template",
+      "uid" : "11e11931ab6fbc61",
+      "parentUid" : "8b6e4064806aab680b771bf53713804f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632817135385,
+        "stop" : 1632817263913,
+        "duration" : 128528
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8b6e4064806aab680b771bf53713804f"
+  }, {
+    "name" : "Testing Sales Return functionality",
+    "children" : [ {
+      "name" : "Creating Sales return",
+      "uid" : "5abf377d493bcdb3",
+      "parentUid" : "bc4ac138c28a81990c9d394ac19f27a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632817279408,
+        "stop" : 1632817448036,
+        "duration" : 168628
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Verify Order from order reports at admin side",
+      "uid" : "95f1767768cf8b62",
+      "parentUid" : "bc4ac138c28a81990c9d394ac19f27a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632817448523,
+        "stop" : 1632817534920,
+        "duration" : 86397
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bc4ac138c28a81990c9d394ac19f27a3"
+  }, {
+    "name" : "Testing Editing Returns functionality",
+    "children" : [ {
+      "name" : "Editing Return",
+      "uid" : "9d1246550755e83b",
+      "parentUid" : "52dc2b6ee449ba00faeb6ec0dd26b514",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632817553281,
+        "stop" : 1632817662835,
+        "duration" : 109554
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "52dc2b6ee449ba00faeb6ec0dd26b514"
+  } ]
+}

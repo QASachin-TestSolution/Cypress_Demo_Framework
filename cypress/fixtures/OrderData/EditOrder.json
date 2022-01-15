@@ -1,0 +1,14 @@
+{
+    "DoYouHaveDate":"No",
+
+    "_comment": "If you entered yes then entering date value is must ",
+
+    "FilterOrderByDate": "10-09-2021",
+    "SelectFilterType": "Order Ref No",
+    "FilterValue": "W_SP00021727S0000000400",
+    "OrderRemarks": "NoRemark",
+    "OrderQty" : "1001",
+    "BonusQty" :"",
+    "FOCQty" : ""
+
+  }

@@ -1,0 +1,14 @@
+{
+    "DoYouHaveDate":"No",
+
+    "_comment": "If you entered yes then date value is must ",
+
+    "FilterReturnByDate": "10-09-2021",
+    "SelectFilterType": "Return Ref No",
+    "FilterValue": "W00021727R0000000011",
+    "OrderRemarks": "NoRemark",
+    "OrderQty" : "1001",
+    "BonusQty" :"",
+    "FOCQty" : ""
+
+  }

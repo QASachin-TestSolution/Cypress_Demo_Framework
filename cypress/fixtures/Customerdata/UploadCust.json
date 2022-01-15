@@ -1,0 +1,12 @@
+{   
+    "FilterCustomerBy":"CUSTOMER BARCODE",
+
+
+    "_comment": "All below values are same as in excel file , so keep theses values same at both places if you update these",
+
+    "Barcode"   : "128332",
+    "LatitudeVerify"   : "25.313309",
+    "LongitudeVerify"   : "55.373299",
+    "Range"   : "60"
+
+  }

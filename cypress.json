@@ -1,0 +1,690 @@
+{  
+    "baseUrl": "http://swx-db.cloudapp.net:1080/swx_cs/html/",
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 50000,
+    "videoUploadOnPasses":false,
+    "video":false,
+    "pageLoadTimeout": 90000,
+
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+      "reportDir": "cypress/report",
+      "charts": true,
+      "reportPageTitle": "custom-title"
+    },
+    
+    
+    
+    "env": {
+
+
+    "db": {
+      "server": "swx-db.cloudapp.net",
+      "authentication": {
+        "type": "default",
+        "options": {
+          "userName": "swx",
+          "password": "swx"
+        }
+      },
+      "options": {
+        "port": 55671,
+        "database": "SWX",
+        "encrypt": true,
+        "rowCollectionOnRequestCompletion": true,
+        "trustServerCertificate": true,
+        "validateBulkLoadParameters": true
+        
+      }
+    },
+
+    
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "login_url"       : "/login.aspx",
+        "UsernameTextbox" :"#txtusername",
+        "PasswordTextbox" :"#txtpassword",
+        "LoginButton"     :"#btn",
+        "HomepageLogo"    :"#logo1",
+        "InvalidLoginmsg" :"#lblMsg",
+        "OrderMenu"       :"//SPAN[@class='title'][text()='Orders']",
+        "NewOrderEntrySubMenu"   :"//SPAN[@class='title'][text()='New Order Entry']",
+        "OrdersNOEOrderType":"#MainContent_ddlOrderType_Input",
+        "OrdersNOEOrderTypeNormal" :"//li[contains(text(),'Normal')]",
+        "OrdersNOEOrderTypeDonation":"//li[contains(text(),'Donation Order')]",
+        "OrdersNOEOrderTypeFOC"     :"//li[contains(text(),'FOC Order')]",
+        "SelectCustomer"    : "//LI[@class='rcbHovered ']", 
+        "OrdersNOECategory1":"//li[contains(text(),'GEN - JDS ABD(02)')]",
+        "OrdersNOECategory2":"//li[contains(text(),'JUL - JDS ABD(02)')][2]",
+        "OrdersNOEShippingDatePopupBtn":"#MainContent_txtOrderDate_popupButton",
+        "OrdersNOEShippingDatePopup":"#MainContent_txtOrderDate_calendar_Top",
+        "OrdersNOEDate" : "#MainContent_txtOrderDate_dateInput_text",
+        "OrdersNOECategory" :"#MainContent_ddlCategory_Input",
+        "OrdersNOEOrdersSkipConsolidationDrpDwn":"#MainContent_ddlSkipOrder_Input",
+        "OrdersNOEOrdersSkipConsolidationYes": "//li[contains(text(),'Yes')]",
+        "OrdersNOEOrdersSkipConsolidationNo":"//li[2][contains(text(),'No')]",
+        "WholesaleOrderCheckbox":"//SPAN[@class='rbPrimaryIcon rbToggleCheckbox']",
+        "OrdersNOECustomer":"#MainContent_txtCustomerCode_Input",
+        "OrdersNOECustRemarks":"#MainContent_txtRemarks_text",
+        "OrdersNOECustPONo":"#MainContent_txtCustPO_text",
+        "OrdersNOEProduct":"#MainContent_txtItemCode_Input",
+        "OrdersNOEOrderQty":"#MainContent_txtOrdQty",
+        "OrdersNOEBonusQty":"#MainContent_txtBonus",
+        "OrdersNOEFOCQty":"#MainContent_txtMFOCQty",
+        "OrdersNOEOrderRemarks":"#MainContent_txtLineRem",
+        "OrdersNOESellingPrice":"#MainContent_txtSellingPrice",
+        "OrdersNOEOrderAmt":"#MainContent_LblTotAmt",
+        "OrdersNOEOrderInfo":"//SPAN[@class='rtsTxt'][text()='Order Info']",
+        "OrdersNOEUoM":"#MainContent_ddlUOM_Input",
+        "OrdersNOEFOCUOM":"#MainContent_ddlFOCUOM_Input",
+        "AddOrderBtn":"#MainContent_btnAddItems_input",
+        "ProductVerify":".tdstyle > :nth-child(3)",
+        "OrdersNOESaveOrderBtn":"#MainContent_btnSave_input",
+
+
+
+        "EditOrderSubMeenu":"//SPAN[@class='title'][text()='Edit Orders']",
+        "EditOrderDateFilter":"#MainContent_txtOrderDate_dateInput_text",
+        "EditOrderFilterAll" :"//li[contains(text(),'All')]",
+        "EditOrderFilterOrderRefNo" :"//li[contains(text(),'Order Ref No')]",
+        "EditOrderFilterCreatedBy" :"//li[contains(text(),'Created By')]",
+        "EditOrderFilterCustomer" :"//li[contains(text(),'Customer')]",
+        "EditOrderFilterCategory":"//li[contains(text(),'Category')]",
+        "EditOrderFilterStatus":"//li[contains(text(),'Status')]",
+        "EditOrderFilterDrpDwn":"#MainContent_ddFilterBy_Input",
+        "EditOrderFilterTxtField":"#MainContent_txtFilterValue_text",
+        "EditOrderFilterSearchBtn":"#MainContent_btnFilter_input",
+        "EditOrderRefNoPosition":"#MainContent_dgv_ctl00__0 > td:nth-child(1)",
+        "EditOrderPencilButton":"#MainContent_dgv_ctl00_ctl04_Edit",
+        "EditOrderPencilButtonIn":"#MainContent_dgvItems_btnEdit_0",
+        "EditOrderRefNoPositionIn":"#MainContent_lblOrderNo",
+        "EditOrderUpdatetoOrderBtn":"#MainContent_btnAddItems",
+        "EditOrderUpdateVerify":".tdstyle > :nth-child(5)",
+
+
+
+
+        "BonusOrderSubmenu":"//SPAN[@class='title'][text()='Bonus Orders']",
+        "BonusOrderCutomer":"#MainContent_RadPanelBar1_i0_txtCustomerCode_Input",
+        "BonusOrderCategoryDrpDwn":"#MainContent_RadPanelBar1_i0_ddlcategory_Input",
+        "BonusOrderCategoryOption1":"//li[contains(text(),'JUL -JDS ABD(02)')]",
+        "BonusOrderCategoryOption2":"//li[contains(text(),'JULPHAR CONSUMER -JDS ABD(02)')]",
+        "BonusOrderCustomerPoNo":"#MainContent_RadPanelBar1_i0_txtCustPo_text",
+        "BonusOrderDateselect":"#MainContent_RadPanelBar1_i0_txtOrderDate_dateInput_text",
+        "BonusOrderDateBtn":"//A[@id='MainContent_RadPanelBar1_i0_txtOrderDate_popupButton']",
+        "BonusOrderDatePopupp":"#MainContent_RadPanelBar1_i0_txtOrderDate_calendar_wrapper",
+        "BonusOrderRemarks":"#MainContent_RadPanelBar1_i0_txtRemarks_text",
+        "BonusOrderSkipConsolidationDrpDwn":"#MainContent_RadPanelBar1_i0_ddlSkipOrder_Input",
+        "BonusOrderSkipConsolidationYes":"//li[contains(text(),'Yes')]",
+        "BonusOrderSkipConsolidationNo":"//li[contains(text(),'No')]",
+        "BonusOrderWholeSaleOrdercheckbox":".rbPrimaryIcon",
+        "BonusOrderProductfield":"#MainContent_RadPanelBar2_i0_txtItemCode_Input",
+        "BonusOrderOrderQtyfield":"#MainContent_RadPanelBar2_i0_txtOrdQty",
+        "BonusOrderProdRemarks":"#MainContent_RadPanelBar2_i0_txtLineRem_text",
+        "BonusOrderProductUom":"#MainContent_RadPanelBar2_i0_ddlUOM_Input",
+        "BonusOrderAddProductBtn":"#MainContent_RadPanelBar2_i0_btnAddItems",
+        "BonusOrderSaveBtn":"#MainContent_RadPanelBar1_i0_btnSave_input",
+        "BonusOrderConfirmOk":"(//SPAN[@class='rwInnerSpan'][text()='OK'])[1]",
+        "BonusOrderProd1AddedPlace":"#MainContent_dgvItems_ctl00__0 > :nth-child(3)",
+        "BonusOrderProd2AddedPlace":"#MainContent_dgvItems_ctl00__1 > :nth-child(3)",
+
+
+
+        "OrderTemplateSubmenu":"//SPAN[@class='title'][text()='Order Templates']",
+        "OrderTemplateCustomerDrpDwn":"#MainContent_ddlCustomers_Input",
+        "OrderTemplateSelectTemp":"#MainContent_ddltemplates_Input",
+        "OrderTemplateloadBtn":"#MainContent_LoadBtn_input",
+        "OrderTemplateCustomer":"#MainContent_txtCustomerCode_Input",
+        "OrderTemplateShippingDate":"#MainContent_txtOrderDate_dateInput_text",
+
+        "OdersEditReturnsSubmenu":"//SPAN[@class='title'][text()='Edit Returns']",
+        "EditReturnsReturnDate":"#MainContent_txtOrderDate_dateInput_text",
+        "EditReturnsReturnDatePopUpBtn":"#MainContent_txtOrderDate_popupButton",
+        "EditReturnsReturnDatePopUp":"#MainContent_txtOrderDate_calendar",
+        "EditReturnsReturnFilterby":"#MainContent_ddFilterBy_Input",
+        "EditReturnsReturnFilterValue":"#MainContent_txtFilterValue_text",
+        "EditReturnFilterReturnType":"//li[contains(text(),'Return Type')]",
+        "EditReturnsFilterReturnRefNo" :"//li[contains(text(),'Return Ref No')]",
+        "EditReturnsReturnRefNoPosition":"#MainContent_RadPanelBar1_i0_lblOrderNo",
+        "EditReturnsProdEditBtn":"#MainContent_RadPanelBar2_i0_dgvItems_btnEdit_0",
+        "EditReturnsOrderQty":"#MainContent_RadPanelBar2_i0_txtOrdQty",
+        "EditReturnsUpdateProdBtn":"#MainContent_RadPanelBar2_i0_btnAddItems_input",
+        "EditReturnsUpdateReturnBtn":"#MainContent_RadPanelBar1_i0_btnUpdateOrder_input",
+
+
+
+        "SalesReturnSubmenu":"//SPAN[@class='title'][text()='Sales Return']",
+        "SalesReturnTypeDrpDwn":"#MainContent_RadPanelBar1_i0_ddlOrderType_Input",
+        "SalesReturnTypeCreditNote":"//li[contains(text(),'Credit Note')]",
+        "SalesReturnTypeReplacement":"//li[contains(text(),'Replacement')]",
+        "SalesReturnGoodsDrpDwn":"#MainContent_RadPanelBar1_i0_ddlGoods_Input",
+        "SalesReturnGoodsCollectedYes":"//li[contains(text(),'Yes')]",
+        "SalesReturnGoodsCollectedNo":"//LI[@class='rcbHovered '][text()='No']",
+        "SalesReturnCategoryOption1":"//li[contains(text(),'AGENCIES - JDS SHJ(01)')]",
+        "SalesReturnCategoryOption2":"//li[contains(text(),'GEN - JDS SHJ(01)')]",
+        "SalesReturnCategoryOption3":"//li[contains(text(),'JULPHAR - JDS SHJ(01)')]",
+        "SalesReturnCategoryOption4":"//li[contains(text(),'JULPHAR CONSUMER - JDS SHJ(01)')]",
+        "SalesReturnCategoryOption5":"//li[contains(text(),'NESTLE - JDS SHJ(01)')]",
+        "SalesReturnCustomerRefNo":"//INPUT[@id='MainContent_RadPanelBar1_i0_txtCustPO_text']",
+        "SalesReturnInvoiceRefNo":"#MainContent_RadPanelBar1_i0_txtInvoiceRef_text",
+        "SalesReturnBonusQty":"#MainContent_RadPanelBar2_i0_txtBonus",
+        "SalesReturnLotNo":"#MainContent_RadPanelBar2_i0_txtLotNo",
+        "SalesReturnCategoryDrpDwn":"#MainContent_RadPanelBar1_i0_ddlCategory_Arrow",
+        "SalesReturnReasonDrpDwn":"#MainContent_RadPanelBar2_i0_ddlLotType_Input",
+        "SalesReturnReasonDamaged":"//li[contains(text(),'Damaged')]",
+        "SalesReturnReasonExpired":"//li[contains(text(),'Expired')]",
+        "SalesReturnReasonResellable":"//li[contains(text(),'Expired')]",
+        "SalesReturnExpireDate":"#MainContent_RadPanelBar2_i0_txtExpDate_dateInput_text",
+        "SalesReturnExpireDatepopUpBtn":"//A[@id='MainContent_RadPanelBar2_i0_txtExpDate_popupButton']",
+        "SalesReturnExpireDatepopUp":"#MainContent_RadPanelBar2_i0_txtExpDate_calendar",
+        "SalesReturnInvoice":"#MainContent_RadPanelBar2_i0_ddl_Invoice_Input",
+        "SalesReturnReason":"#MainContent_RadPanelBar2_i0_txt_reason",
+        "SalesReturnAdd":"#MainContent_RadPanelBar1_i0_btnSave_input",
+        "SalesReturnProductAddedPlace":".tdstyle > :nth-child(3)",
+        "SalesReturnCnfrmOkay":"//SPAN[@class='rwInnerSpan'][text()='OK']",
+        "SalesReturnValuePosition":"#MainContent_RadPanelBar2_i0_LblTotAmt",
+
+
+        "ReportsMenu":"//SPAN[@class='title'][text()='Reports']",
+        "ReportsVisitsSubMenu":"//SPAN[@class='title'][text()='Visits']",
+        "ReportsVisitsOrderSubMenu":"(//SPAN[@class='title'][text()='Orders'])[2]",
+        "ReportsVisitsOrgDrpDwn":"#MainContent_rpbFilter_i0_ddlOrganization_Input",
+        "ReportsVisitsOrgFsrDrpDwn":"#MainContent_rpbFilter_i0_ddlVan_Input",
+        "ReportsVisitsStartDate":"#MainContent_rpbFilter_i0_txtFromDate_dateInput_text",
+        "ReportsVisitsToDate":"#MainContent_rpbFilter_i0_txtToDate_dateInput_text",
+        "ReportsVisitsSearchBtn":"#MainContent_rpbFilter_i0_SearchBtn_input",
+        "ReportsVisitsOrderRefNo":"//a[contains(text(),'M_NO00021727S0000000175')]",
+        "ReportsCreditNoteSubmenu":"//SPAN[@class='title'][text()='Credit Notes']",
+        
+
+
+        "CommunicationMenu":"//SPAN[@class='title'][text()='Communication']",
+        "CommNewMsgSubMenu":"//SPAN[@class='title'][text()='New Message']",
+        "CommNewMessageBtn":"#MainContent_NewMsgBtn_input",
+        "CommNewMesgStartDateBtn":"#MainContent_Sel_Date_popupButton",
+        "CommNewMesgStartDatePopup":"#MainContent_Sel_Date_calendar_wrapper",
+        "CommNewMesgStartDate":"#MainContent_Sel_Date_dateInput_text",
+        "CommNewMesgExpiryDateBtn":"#MainContent_Expiry_Date_popupButton",
+        "CommNewMesgExpiryDatePopup":"#MainContent_Expiry_Date_calendar_wrapper",
+        "CommNewMesgExpiryDate":"#MainContent_Expiry_Date_dateInput_text",
+        "CommNewMesgTitleField":"#MainContent_TitleTxt_text",
+        "CommNewMesgTxtField":"#MainContent_MsgTxt_text",
+        "CommNewMesgFsrSelectDrpDwn":"#MainContent_SalesRepList_Input",
+        "CommNewMesgFsrCheckbox":".rcbHovered > .rcbCheckBox",
+        "CommNewMesgSendMsgBtn":"#MainContent_SendMsgBtn_input",
+        "CommNewMesgSentCnfrm":"//SPAN[@class='rwInnerSpan'][text()='OK']",
+        "CommNewMesgSentOutboxTable":"#MainContent_gvOutBox",
+        "CommNewMesgReceivedInboxTable":"#MainContent_gvInbox",
+
+
+        "CommMsgStatusSubmenu":"//SPAN[@class='title'][text()='Message Status']",
+        "CommMsgStatusOutboxEle":"//SPAN[@class='rtsTxt'][text()='Outbox']",
+        "CommMsgStatusInboxEle":"//SPAN[@class='rtsTxt'][text()='Inbox']",
+        
+        "CommSendPushSubMenu":"//SPAN[@class='title'][text()='Send Push Notification']",
+        "CommSendPushTitletext":"#MainContent_txtTitle_text",
+        "CommSendPushDesription":"#MainContent_txt_Msg_text",
+        "CommSendPushRecipientType":"#MainContent_ddlReceType_Input",
+        "CommSendPushSendto":"#MainContent_ddlFSR_Input",
+        "CommSendPushSaveBtn":"#MainContent_btnSave_input",
+        "CommSendPushAlluser":"//LI[text()='All Users']",
+        "CommSendPushSpecificuser":"//li[text()='Specific Users']",
+
+        "CommLogsMenu":"//SPAN[@class='title'][text()='Logs']",
+        "CommLogsPushNotifications":"//SPAN[@class='title'][text()='Push Notifications']",
+        "CommLogsOrgfilter":"#MainContent_rpbFilter_i0_ddlOrganization_Input",
+        "CommLogsFSRfilterCheckbox":"(//INPUT[@type='checkbox'])[1]",
+        "CommLogsFSRfilter":"#MainContent_rpbFilter_i0_ddlVan_Input",
+        "CommLogsFSRSelectCheckbox":".rcbHovered > .rcbCheckBox",
+        "CommLogsFSRSearchBtn":"#MainContent_rpbFilter_i0_SearchBtn",
+        "PushNotificationMessageTable":"#MainContent_gvRep_ctl00",
+
+
+        "CustomerManagemtModule":"//span[@class='title'][text()='Customer Management']",
+         
+        "CustGeoLocSubmenu":"//span[@class='title'][text()='Customer Geolocations']",
+        "CustGeoLocFilterBy":"#MainContent_ddFilterBy_Input",
+        "CustGeoLocFilterByBarcode":"//LI[text()='Customer Barcode']",
+        "CustGeoLocFilterByCustName":"//LI[text()='Customer Name']",
+        "CustGeoLocFilterByAddress":"//LI[text()='Address']",
+        "CustGeoLocFilterByCustNo":"//LI[text()='Customer No']",
+        "CustGeoLocFiltervalue":"#MainContent_txtFilterVal_text",
+        "CustGeoLocFilterSearchBtn":"#MainContent_btnFilter",
+        "CustGeoLocEditBtn":"#MainContent_gvLatitude_ctl00_ctl04_btnEdit",
+        "CustGeoLocLatitude":"#MainContent_txtLatitude",
+        "CustGeoLocLongitude":"#MainContent_txtLongitude",
+        "CustGeoLocRange":"#MainContent_txtRange",
+        "CustGeoLocUpdateBtn":"#MainContent_btnUpdate_input",
+        "CustGeoLocConfirmOkBtn":"//span[@class='rwInnerSpan'][text()='OK']",
+
+        "CustGeoLocLatitudeVerify":"#MainContent_gvLatitude_ctl00__0 > :nth-child(7)",
+        "CustGeoLocLongitudeVerify":"#MainContent_gvLatitude_ctl00__0 > :nth-child(8)",
+        "CustGeoLocRangeVerify":"#MainContent_gvLatitude_ctl00__0 > :nth-child(11)",
+        "CustomerSelectCheckox":"#MainContent_gvLatitude_ctl00_ctl04_cbSelect",
+        "CustUpdateDefaultRadiusBtn":"#MainContent_btnRadius",
+        "CustomerVisitRadius":"#MainContent_Radius_DocWindow_C_txtdefaultradius_text",
+        "CustDefaultRadiusUpdateBtn":"#MainContent_Radius_DocWindow_C_btnUpdateRadius_input",
+        "CustDefaultRadiusCnfrmOkBtn":"//SPAN[@class='rwInnerSpan'][text()='Yes']",
+        "CustDefaultRadiusUpdatedOk":"//SPAN[@class='rwInnerSpan'][text()='OK']",
+        "CustGeoExportBtn":"#MainContent_btnExport_input",
+        "CustGeoLocUploadBtn":"//input[@class='ruButton ruBrowse'][@value='Upload']",
+        "CustGeoLocUploadCnfrmOk":"//span[text()='OK']",
+        "CustGeoLocDownloadTemplateBtn":"#MainContent_btndownloadTemplate_input",
+
+        "UserMgtModuleMenu":"//span[@class='title'][text()='User Management']",
+
+        "ManageEmpSubmenu":"//span[@class='title'][text()='Manage Employee']",
+        "ManageEmpOrgDrpDwn":"#MainContent_ddOraganisation_Input",
+        "ManageEmpEmpCode":"#MainContent_txtFSRNo_text",
+        "ManageEmpEmpName":"#MainContent_txtFSRName_text",
+        "ManageEmpSaveBtn":"#MainContent_btnSave_input",
+        "ManageEmpCreatedVerify":"//div[contains(text(),'Successfully saved.')]",
+
+        "ManageUserSubmenu":"//span[@class='title'][text()='Manage Users ']",
+        "ManageUserSelectUserDrpDwn":"#MainContent_drpUser_Input",
+        "ManageUserUsername":"#MainContent_txtUser_text",
+        "ManageUserSelectDesignation":"#MainContent_drpDesignation_Input",
+        "ManageUserEmailfield":"#MainContent_txtEmail_text",
+        "ManageUserPasswordfield":"#MainContent_txtPwd",
+        "ManageUserSelectUsertype":"#MainContent_drpUserType_Input",
+        "ManageUserSelectUserName":"#MainContent_drpUser_Input",
+        "ManageUserSelectEmployee":"#MainContent_ddlEmpCode_Input",
+        "ManageUserSelectFSR":"#MainContent_drpSalesRep_Input",
+        "ManageUserSelectApproval":"#MainContent_ddlApproval_Input",
+        "ManageUserSelectMarketingApproval":"#MainContent_ddlApproval_Input",
+        "ManageUserOrganizationDrpdwn":"#MainContent_ddlOrg_Input",
+        "ManageUserAssignedUsersDrpdwn":"#MainContent_chkSalesRep_Input",
+
+        "ManageUserOperationType":"#MainContent_drpUserOperType_Input",
+        "ManageUserAssignUserCheckbox":"(//INPUT[@type='checkbox'])[1]",
+        "ManageUserAddBtn":"#MainContent_btnAdd_input",
+        "ManageUserModifyBtn":"#MainContent_btnModify_input",
+        "ManageUserDeleteBtn":"#MainContent_btnDelete_input",
+        "ManageUserUpdateBtn":"//a[@id='MainContent_btnUpdate']",
+        "ManageUserSaveBtn":"#MainContent_btnSave_input",
+        "ManageUserCnfrmOkBtn":"//span[text()='OK']",
+        "ManageUserDeleteTxtVerify":"//div[contains(text(),'User deleted successfully.')]",
+        "ManageUserUpdateTxtVerify":"//div[contains(text(),'User updated successfully.')]",
+
+        
+
+        "ManageUserUsernameSearch":"#MainContent_rgUsers_ctl00_ctl02_ctl02_FilterTextBox_Username",
+        "ManageUserUsernameVerify":"#MainContent_rgUsers_ctl00__0 > :nth-child(2)",
+        "ManageUserDesignationVerify":"#MainContent_rgUsers_ctl00__0 > :nth-child(4)",
+        "ManageUserEmpNameVerify":"#MainContent_rgUsers_ctl00__0 > :nth-child(6)",
+
+
+        "ManageUserTypeSubmenu":"//span[@class='title'][text()='Manage User Types']",
+        "ManageUserTypeAddBtn":"#MainContent_btnAddNew_input",
+        "ManageUserTypeModifyBtn":"#MainContent_btnModify_input",
+        "ManageUserTypeDeleteBtn":"#MainContent_btnDelete_input",
+        "ManageUserTypeSelectUsertype":"#MainContent_drpUserTypes_Input",
+        "ManageUserTypeSelectDesignation":"#MainContent_drpDesignation_Input",
+        "ManageUserTypePDARights":"#MainContent_ddlPDARights_Input",
+        "ManageUserTypePDARightsArrowBtn":"#MainContent_ddlPDARights_Arrow",
+        "ManageUserTypeCreateMsgVerify":"//div[contains(text(),'User Type saved successfully.')]",
+        "ManageUsertypeDeleteTxtVerify":"//div[contains(text(),'User type deleted successfully.')]",
+        "ManageUsertypeUpdatedTxtVerify":"//div[contains(text(),'User type updated successfully.')]",
+
+        "ManageUserTypeUsertypeField":"#MainContent_txtUserType_text",
+        "ManageUserTypeUsertypeUnselectDesignation":"//li[contains(text(),'--Select--')]",
+        "ManageUserTypeRoutemgtcheckbox":"//span[@class='rtIn'][text()='Route Management']/../span[@class='rtUnchecked']",
+        "ManageUserTypeSelfServicecheckbox":"//span[@class='rtIn'][text()='Self Service']/../span[@class='rtUnchecked']",
+
+        "ManageUserTypeRoutemgtcheckedVerify":"//span[@class='rtIn'][text()='Route Management']/../span[@class='rtChecked']",
+        "ManageUserTypeSelfServicecheckedVerify":"//span[@class='rtIn'][text()='Self Service']/../span[@class='rtChecked']",
+        "ManageUserTypeSaveBtn":"//a[@id='MainContent_btnSave']",
+        "ManageUserTypeUpdateBtn":"#MainContent_btnUpdate_input",
+        "ManageUserTypePDAFieldSalescheckbox":"//span[@class='rtIn'][text()='Field Sales']/../input",
+
+        "ManageUserCategorySubmenu":"//span[contains(text(),'Manage User Category')]",
+        "ManageUserCategorySelectUser":"#MainContent_ddlUser_Input",
+        "ManageUserCategorySelectCategoryDrpDwn":"#MainContent_ddlCategory_Input",
+        "ManageUserCategoryJULCategory":"//li[text()='JUL']/./input",
+        "ManageUserCategoryGENCategory":"//li[text()='GEN']/./input",
+        "ManageUserCategoryJUCCategory":"//li[text()='JUC']/./input",
+        "ManageUserCategoryNOVCategory":"//li[text()='NOV']/./input",
+        "ManageUserCategorySavedCnfrmText":"//div[contains(text(),'Successfully saved')]",
+
+
+
+        "MedRepModule":"//span[(text()='Med Rep')]",
+
+
+
+        "DoctorsMgtSubmenu":"//span[contains(text(),'Doctors Management')]",
+        "DoctorsMgtAddNewDoctorBtn":"//a[@id='MainContent_btnAdd']",
+        "DoctorsMgtExportDoctorBtn":"#MainContent_btn_Export",
+        "DoctorsMgtUploadDoctors&LocBtn":"#MainContent_ExcelFileUploadfile0",
+        "DoctorsMgtSelectOrgDrpDwn":"#MainContent_ddl_org_Input",
+
+        "DoctorsMgtSelectOrg1":"//li[text()='Pooja_20Oct_Common']",
+        "DoctorsMgtSelectOrg2":"//li[text()='Pooja-20Oct_Merketing']",
+        "DoctorsMgtSelectOrg3":"//li[text()='Site - 5831']",
+        "DoctorsMgtSelectOrg4":"//li[text()='Site - 5800']",
+
+        "DoctorsMgtAddDoctorSpeciality":"#MainContent_DocWindow_C_ddlSpecial_Input",
+        "DoctorsMgtAddDoctorTitle":"#MainContent_DocWindow_C_ddlTitle_Input",
+        "DoctorsMgtAddDoctorClass":"#MainContent_DocWindow_C_ddlClass_Input",
+        "DoctorsMgtAddDoctorName":"#MainContent_DocWindow_C_txtDocName_text",
+        "DoctorsMgtAddDoctorEmail":"#MainContent_DocWindow_C_txtEmail_text",
+
+        "DoctorsMgtDoctorAdditionalInfoTab":"//span[text()='Additional Info']",
+        "DoctorsMgtDoctorVisitsLocationsTab":"//span[text()='Visits Locations *']",
+        "DoctorsMgtAddDoctorAddress1":"#MainContent_DocWindow_C_txtAdd1_text",
+        "DoctorsMgtAddDoctorCity":"#MainContent_DocWindow_C_ddlCity_Input",
+        "DoctorsMgtAddDoctorPostalCode":"#MainContent_DocWindow_C_txtPOBox_text",
+        "DoctorsMgtAddDoctorState":"#MainContent_DocWindow_C_txtState_text",
+        "DoctorsMgtDoctorSaveBtn":"#MainContent_DocWindow_C_btnSave_input",
+        "DoctorsMgtDoctorAvailableLoc":"#MainContent_DocWindow_C_rlvAvaile_i0",
+        "DoctorsMgtDoctorLocSearchBtn":"#MainContent_DocWindow_C_btnSearch_input",
+        "DoctorsMgtDoctorLocSearchTextField":"#MainContent_DocWindow_C_txtFilter_text",
+        "DoctorsMgtAssignLocForwardBtn":"#MainContent_DocWindow_C_imgRemoveSelected",
+        "DoctorsMgtAssignLocBackwardBtn":"#MainContent_DocWindow_C_imgAddSlected",
+        "DoctorsMgtDoctorAssignedLoc":"#MainContent_DocWindow_C_rlvAssigne_i0",
+        "DoctorsMgtSavedTextVerify":"//div[contains(text(),'Successfully saved')]",
+        "DoctorsMgtNameSearchFilter":"#MainContent_rgDoctor_ctl00_ctl02_ctl02_FilterTextBox_Doctor_Name",
+        "DoctorsMgtNameVerify":"#MainContent_rgDoctor_ctl00__0 > :nth-child(6)",
+        "DoctorsMgtSpecialityVerify":"#MainContent_rgDoctor_ctl00__0 > :nth-child(7)",
+        "DoctorsMgtAddressVerify":"#MainContent_rgDoctor_ctl00__0 > :nth-child(8)",
+        "DoctorsMgtOngridDeleteBtn":"#MainContent_rgDoctor_ctl00_ctl04_btnDelete",
+        "DoctorsMgtDeleteCnfrmTextVerify":"//div[contains(text(),'Are you sure to delete this item?')]",
+        "DoctorsMgtDeletedTextVerify":"//div[contains(text(),'Successfully deleted')]",
+        "DoctorsMgtOngridEditBtn":"#MainContent_rgDoctor_ctl00_ctl04_btnEdit",
+
+        "DoctorsMgtUpdatedCnfrmText":"//div[contains(text(),'Successfully updated')]",
+        "DoctorsMgtOngridViewBtn":"#MainContent_rgDoctor_ctl00_ctl04_btnView",
+
+        "DoctorsMgtDoctorDetailsTitle":"#MainContent_DocWindow_C_lblTitle",
+        "DoctorsMgtDoctorDetailsSpeciality":"#MainContent_DocWindow_C_lblSpecialDetail",
+        "DoctorsMgtDoctorDetailsClass":"#MainContent_DocWindow_C_lblClassDetail",
+        "DoctorsMgtDoctorDetailsName":"#MainContent_DocWindow_C_lblDocName",
+        "DoctorsMgtDoctorDetailsEmail":"#MainContent_DocWindow_C_lblEmail",
+        "DoctorsMgtDoctorDetailsAddress":"#MainContent_DocWindow_C_lblAdd1",
+        "DoctorsMgtDoctorDetailsCity":"#MainContent_DocWindow_C_lblCity",
+        "DoctorsMgtDoctorDetailsPostal":"#MainContent_DocWindow_C_lblPostal",
+        "DoctorsMgtDoctorUpload":"#MainContent_ExcelFileUploadfile0",
+        "DoctorsMgtUploadCnfrmText":"//div[contains(text(),'Successfully uploaded')]",
+
+
+
+        "LocationsMgtSubmenu":"//span[contains(text(),'Location Management')]",
+        "LocationsMgtSelectOrgDrpDwn":"#MainContent_ddl_org_Input",
+        "LocationsMgtAddNewLocationBtn":"#MainContent_btnAdd_input",
+        "LocationsMgtSelectOrg1":"//li[text()='Pooja_20Oct_Common']",
+        "LocationsMgtSelectOrg2":"//li[text()='Pooja-20Oct_Merketing']",
+        "LocationsMgtSelectOrg3":"//li[text()='Site - 5831']",
+        "LocationsMgtSelectOrg4":"//li[text()='Site - 5800']",
+
+        "LocationsMgtAddLocationTypeDrpDwn":"#MainContent_DocWindow_C_ddlType_Input",
+        "LocationsMgtAddLocationPhone":"#MainContent_DocWindow_C_txtMobile_text",
+        "LocationsMgtAddLocationEmail":"#MainContent_DocWindow_C_txtEmail_text",
+        "LocationsMgtAddLocationName":"#MainContent_DocWindow_C_txtLocName_text",
+        "LocationsMgtAddLocationSelectArea":"#MainContent_DocWindow_C_ddlCity_Input",
+        "LocationsMgtAddLocationRoadField":"//textarea[@id='MainContent_DocWindow_C_txtAdd1_text']",
+
+        "LocationsMgtAddLocationAdditionalInfoTab":"//span[text()='Additional Info']",
+        "LocationsMgtAddLocationLocality":"#MainContent_DocWindow_C_txtAdd2_text",
+        "LocationsMgtAddLocationPostalCode":"#MainContent_DocWindow_C_txtPOBox_text",
+        "LocationsMgtAddLocationState":"#MainContent_DocWindow_C_txtState_text",
+        "LocationsMgtLocationSaveBtn":"#MainContent_DocWindow_C_btnSave_input",
+
+
+        "LocationsMgtAddLocationGEOLocationTab":"//span[text()='GEO Location *']",
+        "LocationsMgtLocationLattitudeField":"#MainContent_DocWindow_C_txtLat_text",
+        "LocationsMgtLocationLongitudeField":"#MainContent_DocWindow_C_txtLng_text",
+
+        "LocationsMgtAddLocationContactsTab":"//span[text()='Contacts *']",
+        "LocationsMgtAddLocationContactsTitle":"#MainContent_DocWindow_C_ddlTitle_Input",
+
+        "LocationsMgtAddLocationContactsCity":"#MainContent_DocWindow_C_ddlConCity_Input",
+        "LocationsMgtAddLocationContactsPhone":"#MainContent_DocWindow_C_txtConMobile_text",
+        "LocationsMgtAddLocationContactsName":"#MainContent_DocWindow_C_txtConName_text",
+        "LocationsMgtAddLocationContactsEmail":"#MainContent_DocWindow_C_txtConEmail_text",
+        "LocationsMgtAddLocationContactsAddContactBtn":"#MainContent_DocWindow_C_btnConSave_input",
+        "LocationsMgtAddLocationContactsVerify":"#MainContent_DocWindow_C_rgvContacts_ctl00__0 > :nth-child(6)",
+        "LocationsMgtAddLocationSaveBtn":"#MainContent_DocWindow_C_btnSave_input",
+        "LocationsMgtLocationNameFilter":"#MainContent_rgLocations_ctl00_ctl02_ctl02_FilterTextBox_Location_Name",
+        "LocationsMgtNameVerify":"#MainContent_rgLocations_ctl00_ctl04_NameLink",
+        "LocationsMgtRoadNameVerify":"#MainContent_rgLocations_ctl00__0 > :nth-child(8)",
+        "LocationsMgtAreaVerify":"#MainContent_rgLocations_ctl00__0 > :nth-child(9)",
+        "LocationsMgtGridNoRecordTextVerify":".rgNoRecords > td > div",
+        "LocationsMgtOngridDeleteBtn":"#MainContent_rgLocations_ctl00_ctl04_btnDelete",
+        "LocationsMgtOngridViewBtn":"#MainContent_rgLocation_ctl00_ctl04_btnView",
+        "LocationMgtOngridEditBtn":"#MainContent_rgLocations_ctl00_ctl04_btnEdit",
+        "LocationsEditLocMgtEditContact":"#MainContent_DocWindow_C_rgvContacts_ctl00_ctl04_btnEdit",
+        "LocationsMgtEditLocationContactsTab":"//span[text()='Contacts']",
+        "LocationsMgtEditLocationGEOLocationTab":"//span[text()='GEO Location']",
+        "LocationsMgtUpdateChangesBtn":"#MainContent_DocWindow_C_btnSave",
+        "LocationsMgtOngridViewLocationBtn":"#MainContent_rgLocations_ctl00_ctl04_btnView",
+
+        "LocationsMgtLocationDetailsPhone":"#MainContent_DocWindow_C_lblMobile",
+        "LocationsMgtLocationDetailsEmail":"#MainContent_DocWindow_C_lblEmail",
+        "LocationsMgtLocationDetailsArea":"#MainContent_DocWindow_C_lblCityName",
+        "LocationsMgtLocationDetailsLocality":"#MainContent_DocWindow_C_lblAdd2Name",
+        "LocationsMgtLocationDetailsPostal":"#MainContent_DocWindow_C_lblPOBox",
+        "LocationsMgtLocationDetailsState":"#MainContent_DocWindow_C_lblState",
+        "LocationsMgtLocationDetailsLattitude":"#MainContent_DocWindow_C_lblLat",
+        "LocationsMgtLocationDetailsLongitude":"#MainContent_DocWindow_C_lblLng",
+        "LocationsMgtLocationDetailsContactPhone":"#MainContent_DocWindow_C_rgvContacts_ctl00__0 > :nth-child(3)",
+        "LocationsMgtLocationDetailsContactEmail":"#MainContent_DocWindow_C_rgvContacts_ctl00__0 > :nth-child(4)",
+        "LocationMgtLocationUpload":"#MainContent_ExcelFileUploadfile0",
+
+
+        "MedRepLocationAssignment":"//span[contains(text(),'Med Rep Location Assignment')]",
+        "LocAssignSelectMedRep":"#MainContent_ddlEmployee_Input",
+        "LocAssignlocationFilter":"#MainContent_txtFilter_text",
+        "LocAssignSearchBtn":"#MainContent_btnSearch_input",
+        "LocAssignAvailableSearchedlocation":"#MainContent_rlvAvaile_i0",
+        "LocAssignAssignedSearchedlocation":"#MainContent_rlvAssigne_i0",
+        "LocAssignAssignlocBtn":"#MainContent_imgRemoveSelected",
+        "LocAssignDeAssignlocBtn":"#MainContent_imgAddSlected",
+        "LocAssignAssignAlllocBtn":"#MainContent_imgMoveAllRight",
+        "LocAssignDeAssignAlllocBtn":"#MainContent_imgMoveAllLeft",
+        "LocAssignAvailableLocVerify":"#MainContent_lblAvailed",
+        "LocAssignAssignedLocVerify":"#MainContent_lblAssigned",
+        "LocAssignlocOverriteCheckbox":"#MainContent_chk_Overwrite",
+        "MedRepSpecializationAssignment":"//span[contains(text(),'Med Rep Specialization Assignment')]",
+
+
+        "MedRepDoctorAssignment":"//span[contains(text(),'Med Rep Doctor Assignment')]",
+        "MedRepDoctorAssignDownloadTemplateBtn":"#MainContent_btnDownload_input",
+        "MedRepDoctorAssignExportBtn":"#MainContent_btnExport_input",
+        "MedRepOverriteDoctorAssignCheckBox":"#MainContent_chk_Overwrite",
+
+
+        "MedRepDoctorcallsAssignment":"//span[contains(text(),'Med Rep Doctor Calls Assignment')]",
+        "MedRepDoctorcallsDownloadTemplateBtn":"#MainContent_btndownloadTemplate_input",
+        "MedRepDoctorcallsFilterDoctorName":"#MainContent_rgDoctor_ctl00_ctl02_ctl02_FilterTextBox_Doctor_Name",
+        "MedRepDoctorcallsDoctorNameVerify":"#MainContent_rgDoctor_ctl00__0 > :nth-child(3)",
+        "MedRepDoctorcallsDoctorCodeVerify":"#MainContent_rgDoctor_ctl00__0 > :nth-child(2)",
+        "MedRepDoctorcallsRequiredVisitVerify":"//tbody/tr[@id='MainContent_rgDoctor_ctl00__0']/td[8]",
+
+        "MedRepLocationcallsAssignment":"//span[contains(text(),'Med Rep Location Calls Assignment')]",
+        "MedRepLocationcallsFilterLocationName":"#MainContent_rgLocation_ctl00_ctl02_ctl02_FilterTextBox_Location_Name",
+        "MedRepLocationcallsLocationNameVerify":"#MainContent_rgLocation_ctl00__0 > :nth-child(3)",
+        "MedRepLocationcallsLocationCodeVerify":"#MainContent_rgLocation_ctl00__0 > :nth-child(2)",
+        "MedRepLocationcallsRequiredVisitVerify":"//tbody/tr[@id='MainContent_rgLocation_ctl00__0']/td[6]",
+
+        "MedRepVisitPlanningSubmenu":"(//SPAN[@class='title'][text()='Visit Planning'])[2]",
+        "MedRepVisitPlanningPlanNewVisitBtn":"//a[@id='MainContent_btnMonthPlan']",
+        "MedRepVisitPlanningSelectDateBtn":"//a[contains(text(),'Select date')]",
+        "MedRepVisitPlanningDateForArrowBtn":"//a[@id='MainContent_RadScheduler1_SelectedDateCalendar_FNN']",
+        "MedRepVisitSelectLocation":"#MainContent_RadDock1_C_ddlAssigned_Input",
+        "MedRepVisitSelectDoctor":"#MainContent_RadDock1_C_ddlName_Input",
+        "MedRepVisitSelectDemoPlan":"#MainContent_RadDock1_C_ddlDemoPlan_Input",
+        "MedRepVisitObjectiveField":"#MainContent_RadDock1_C_Comments_text",
+        "MedRepVisitSaveVisitBtn":"//a[@id='MainContent_RadDock1_C_SubmitButton']",
+        "MedRepVisitCopyVisitBtn":"#MainContent_RadDock1_C_btnCopy_input",
+        "MedRepVisitMoveVisitBtn":"#MainContent_RadDock1_C_btnMove_input",
+        "MedRepVisitDeleteVisitBtn":"#MainContent_RadDock1_C_btnDelete",
+        "MedRepVisitPopUpCalenderDatePath":"//td[@title='Wednesday, November 16, 2022']",
+        "MedRepVisitScreenCalenderDate1Selectpath":"//a[@title='11/16/2022']/..",
+        "MedRepVisitScreenCalenderDate2Selectpath":"//a[@title='11/17/2022']/..",
+        "MedRepVisitScreenCalenderDate3Selectpath":"//a[@title='11/15/2022']/..",
+
+
+        "MedRepVisitPopUpCalenderCopyDateSelectpath":"(//td[@title='Thursday, November 17, 2022'])[2]",
+        "MedRepVisitPopUpCalenderMoveDateSelectpath":"(//td[@title='Tuesday, November 15, 2022'])[2]",
+
+        "MedRepVisitSavedPopUpTxtVerify":"//div[contains(text(),'Visit successfully saved')]",
+        "MedRepVisitDeleteCnfrmTextVerify":"//div[contains(text(),'Are you sure you want to delete?')]",
+        "MedRepVisitCnfrmOkBtn":"//span[text()='OK']",
+        "MedRepVisitDeletedTextVerify":"//div[contains(text(),'Successfully deleted')]",
+        "MedRepVisitCreatedVerifyPosition":"//a[@title='11/16/2022']/../../../div[2]/div",
+        "MedRepVisitPopUpDateForArrowBtn":"#MainContent_RadDock1_C_RDCMoveCopy_FNN",
+        "MedRepVisitCopiedPopUpTxtVerify":"//div[contains(text(),'Visit successfully copied')]",
+        "MedRepVisitCopiedVisitPosition":"//a[@title='11/17/2022']/../../../div[2]/div",
+        "MedRepVisitMovedPopUpTxtVerify":"//div[contains(text(),'Visit successfully moved')]",
+        "MedRepVisitMovedVisitPosition":"//a[@title='11/15/2022']/../../../div[2]/div",
+
+        "MedRepVisitScreen2SelectOrg":"#MainContent_rpbFilter_i0_ddl_org_Input",
+        "MedRepVisitScreen2SelectMedRep":"#MainContent_rpbFilter_i0_ddlEmployee_Input",
+        "MedRepVisitScreen2SelectDatePopUpBtn":"#MainContent_rpbFilter_i0_rcSelDate_popupButton",
+
+        "MedRepVisitScreen2MoveVisitDate":"(//td[@title='Tuesday, November 15, 2022'])[1]",
+        "MedRepVisitScreen2SetVisitDate":"//td[@title='Wednesday, November 16, 2022']",
+        "MedRepVisitScreen2SCopyVisitDate":"(//td[@title='Thursday, November 17, 2022'])[1]",
+        "MedRepVisitScreen2DoctorNameFilter":"#MainContent_rgMonthly_ctl00_ctl02_ctl03_FilterTextBox_DoctorName",
+        "MedRepPlannedVisitScreenDoctorNameFilter":"#MainContent_rgPlanned_ctl00_ctl02_ctl02_FilterTextBox_DoctorContactName",
+        "MedRepVisitScreen2SelectLocCheckbox":"#MainContent_rgMonthly_ctl00_ctl05_checkbox2",
+        "MedRepPlannedVisitCheckbox":"#MainContent_rgPlanned_ctl00_ctl05_checkbox3",
+        "MedRepVisitScreen2SaveVisitBtn":"#MainContent_btnVSave_input",
+        "MedRepVisitScreen2PlannedVisitTab":"//span[text()='November-2022 Planned Visits']",
+        "MedRepVisitScreen2VisitSavedTxtVerify":"//div[contains(text(),'Successfully saved')]",
+        "MedRepVisitScreen2PopUpSaveBtn":"#MainContent_DocWindow_C_btnSave",
+        "MedRepVisitScreen2CopyBtn":"#MainContent_btnCopy_input",
+        "MedRepVisitScreen2MoveBtn":"#MainContent_btnMove_input",
+        "MedRepVisitScreen2CreatedVisitVerify":"#MainContent_rgPlanned_ctl00__0 > :nth-child(7)",
+
+        "MedRepVisitScreenCalenderCopiedVisitpath":"//a[@title='11/17/2022']/..",
+        "MedRepVisitScreenCalenderMovedVisitpath":"//a[@title='11/15/2022']/..",
+
+        "MedRepVisitScreenCalenderRightClickCopyVisitpath":"//a[@title='11/6/2022']/..",
+        "MedRepVisitScreenCalenderRightClickMoveVisitpath":"//a[@title='11/8/2022']/..",
+
+        "MedRepVisitExistingVisitPosition":"//a[@title='11/7/2022']/../../../div[2]/div",
+        "MedRepVisitMouseCopiedVisitPosition":"//a[@title='11/6/2022']/../../../div[2]/div",
+        "MedRepVisitMouseMovedVisitPosition":"//a[@title='11/8/2022']/../../../div[2]/div",
+        "MedRepVisitMouseRightClickCopyBtn":"//span[text()='Copy']",
+        "MedRepVisitMouseRightClickPasteBtn":"//span[text()='Paste']",
+        "MedRepVisitMouseRightClickCutBtn":"//span[text()='Cut']",
+        "MedRepVisitMouseRightClickDeleteBtn":"//span[text()='Delete']",
+        "MedRepVisitCalenderYearTitleBtn":"#MainContent_RadScheduler1_SelectedDateCalendar_Title",
+        "MedRepVisitCalenderPopUpYearTitleBtn":"#MainContent_RadDock1_C_RDCMoveCopy_Title",
+        "MedRepVisitCalenderYearBtn":"//A[@href='#'][text()='2022']",
+        "MedRepVisitCalenderMonthBtn":"//a[text()='Nov']",
+        "MedRepVisitCalenderOkBtn":"//input[@value='OK']",
+
+        "MedRepRoghtClickVisitMovedPopUpTxtVerify":"//div[contains(text(),'Successfully moved')]",
+        "MedRepRoghtClickVisitCopiedPopUpTxtVerify":"//div[contains(text(),'Successfully copied')]",
+        "MedRepRoghtClickVisitDeletedPopUpTxtVerify":"//div[contains(text(),'Successfully deleted')]",
+
+        "MedRepUploadMonthlyVisitPlanSubmenu":"//span[contains(text(),'Upload Monthly Plan')]",
+        "MedRepUploadMonthlyVisitPlanEmpSelect":"#MainContent_ddlFSR",
+        "MedRepUploadMonthlyVisitPlanDateSelectBtn":"#MainContent_StartTime_popupButton",
+        "MedRepUploadMonthlyVisitPlanYearBtn":"//A[@href='#'][text()='2022']",
+        "MedRepUploadMonthlyVisitPlanMonthBtn":"//a[text()='Sep']",
+        "MedRepUploadMonthlyVisitPlanDatePopUpOkBtn":"#rcMView_OK",
+        "MedRepUploadMonthlyVisitPlanUploadBtn":"#MainContent_ExcelFileUploadfile0",
+        "MedRepUploadMonthlyVisitPostionOnCalender":"//a[@title='9/15/2022']/../../../div[2]/div",
+        "MedRepVisitUploadPopUpCalenderDatePath":"//td[@title='Thursday, September 15, 2022']",
+        "MedRepExportMonthlyVisitPlanMonthBtn":"//a[text()='Nov']",
+        "MedRepExportMonthlyVisitExportBtn":"#MainContent_Btn_Export",
+
+        "MedRepApproveMonthlyPlanSubmenu":"//span[contains(text(),'Approve Monthly Plan')]",
+        "MedRepVisitCalenderApproveMonthBtn":"//a[text()='Aug']",
+        "MedRepApproveVisitPopUpDatePath":"//td[@title='Monday, August 01, 2022']",
+        "MedRepApproveVisitDate1Selectpath":"//a[@title='8/16/2022']/..",
+        "MedRepApproveVisitCreatedVerifyPosition":"//a[@title='8/16/2022']/../../../div[2]/div",
+        "MedRepApproveVisitEmpFilter":"#MainContent_rgMonthly_ctl00_ctl02_ctl02_FilterTextBox_EmpName",
+        "MedRepApproveVisitMonthYearFilter":"#MainContent_rgMonthly_ctl00_ctl02_ctl02_FilterTextBox_PlanMonth",
+        "MedRepApproveVisitViewApproveBtn":"#MainContent_rgMonthly_ctl00_ctl04_btnView",
+        "MedRepApproveVisitSearchedVisitCheckbox":"#MainContent_rgMonthly_ctl00_ctl05_checkbox2",
+        "MedRepApproveApproveVisitsBtn":"#MainContent_btnVerified_input",
+        "MedRepApproveVisitsCnfrmPopUpTxtVerify":"//div[contains(text(),'Would you like to approve the selected visits?')]",
+        "MedRepApproveVisitsApprovedTxtVerify":"//div[contains(text(),'Selected visits are approved successfully.')]",
+        "MedRepApproveVisitsGoBackBtn":"#MainContent_btnGoBack_input",
+        "MedRepApproveVisitsStatusPosition":"#MainContent_rgMonthly_ctl00__0 > :nth-child(4)",
+        "MedRepApproveVisitPlannedVisitTab":"//SPAN[@class='rtsTxt'][text()='Planned Visits']",
+         
+        "MedRepTaskMgtSubmenu":"//span[contains(text(),'Task Management')]",
+        "MedRepTaskMgtSelectDoctorDrpDwn":"#MainContent_ddlName_Input",
+        "MedRepTaskMgtSelectLocDrpDwn":"#MainContent_ddlLocation_Input",
+        "MedRepTaskMgtTitleField":"#MainContent_txtTitle_text",
+        "MedRepTaskMgtSelectCategoryDrpDwn":"#MainContent_ddlCategory_Input",
+        "MedRepTaskMgtSelectPriorityDrpDwn":"#MainContent_ddlPriority_Input",
+        "MedRepTaskMgtSelectStatusDrpDwn":"#MainContent_ddlStatus_Input",
+        "MedRepTaskMgtAddTaskBtn":"#MainContent_btnAdd",
+        "MedRepTaskMgtTaskDescription":"#MainContent_txtDescription_text",
+        "MedRepTaskMgtAddTaskSaveBtn":"#MainContent_btnSave",
+        "MedRepTaskMgtAddTaskSearchBtn":"#MainContent_SearchBtn_input",
+        "MedRepTaskMgtTitleVerifyPosition":"#MainContent_rgTask_ctl00__0 > :nth-child(2)",
+        "MedRepTaskMgtStatusVerifyPosition":"#MainContent_rgTask_ctl00__0 > :nth-child(6)",
+        "MedRepTaskMgtTaskEditBtnOnGrid":"#MainContent_rgTask_ctl00_ctl04_View",
+        "MedRepTaskMgtTaskUpdateBtn":"#MainContent_btnUpdate_input",
+
+        "MedRepCopyMonthlyPlanSubmenu":"//span[contains(text(),'Copy Monthly Plan')]",
+        "MedRepCopyMonthlyPlanFromdatePopUpBtn":"#MainContent_StartTime_popupButton",
+        "MedRepCopyMonthlyPlanTodatePopUpBtn":"#MainContent_EndTime_popupButton",
+        "MedRepCopyMonthlyPlanSelectYearBtn":"(//A[@href='#'][text()='2022'])[1]",
+        "MedRepCopyMonthlyPlanFromMonthBtn":"(//a[text()='Aug'])[1]",
+        "MedRepCopyMonthlyPlanToMonthBtn":"(//a[text()='Dec'])[1]",
+        "MedRepCopyMonthlyPlanCopyByDrpDwn":"#MainContent_ddlMode_Input",
+        "MedRepCopyMonthlyPlanCopyByWeekDays":"//li[text()='Week Days']",
+        "MedRepCopyMonthlyPlanCopyVisitsBtn":"#MainContent_btnCopy",
+        "MedRepCopyMonthlyPlanCopiedPopUpTxtVerify":"//div[contains(text(),'Successfully copied')]",
+        "MedRepCopyMonthlyPlanCopiedDatePath":"//td[@title='Tuesday, December 06, 2022']",
+        "MedRepCopyMonthlyPlanCopiedVisitPath":"//a[@title='12/6/2022']/../../../div[2]/div"
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+         
+
+
+         
+
+ 
+
+
+
+
+       
+
+
+
+
+
+
+      }
+    }
+    

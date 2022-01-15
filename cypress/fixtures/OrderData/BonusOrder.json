@@ -1,0 +1,25 @@
+{
+    "Customer":"1157 - Al Qasimi Hospital (Shj)-Sharjah-Consumer",
+    "Categgory":"JUL -JDS ABD(02)",
+    "WantToChangeDefaultDate":"NO",
+    "NewDate":"30-09-2021",
+    "CustomerPoNo":"12345",
+    "Customeremarks":"Customer Test Remarks",
+    "SkipConsolidation":"No",
+    "WholeSaleOrder":"yes",
+    "OrderQty":"10",
+    
+
+    "Product":"DORA 12X150 GM",
+    "ProductRemark":"No Remark",
+
+    "WantToChangeDefaultStartDateTODate":"NO",
+    "StartDate":"16-09-2021",
+    "EndDate":"17-09-2021",
+
+    "SearchByOrg" :"Site - 5831",
+    "SearchByFSR" :"Rashid"
+    
+
+
+}

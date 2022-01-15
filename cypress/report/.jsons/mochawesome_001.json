@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-14T07:59:50.807Z",
+    "end": "2021-10-14T08:00:47.443Z",
+    "duration": 56636,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d645c7ef-b5c2-4425-b6d0-39184a105458",
+      "title": "",
+      "fullFile": "cypress/integration/BaseModule/01Login.js",
+      "file": "cypress/integration/BaseModule/01Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "391b7b90-5a27-4c63-be1b-284bb6afa0b5",
+          "title": "Testing Login Functionality of Salesworx",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testing Valid Login",
+              "fullTitle": "Testing Login Functionality of Salesworx Testing Valid Login",
+              "timedOut": null,
+              "duration": 45590,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Fetching the data from Fixture file\ncy.login(this.data.email1, this.data.password1);\ncy.task('log', 'Login into the website using valid Username and valid Password');\ncy.get(Cypress.env('HomepageLogo')).should('be.visible');\ncy.task('log', 'Homepage is visible');",
+              "err": {},
+              "uuid": "670946b4-d7d5-4f88-ba96-cbdc7d1abb47",
+              "parentUUID": "391b7b90-5a27-4c63-be1b-284bb6afa0b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testing Invalid Password",
+              "fullTitle": "Testing Login Functionality of Salesworx Testing Invalid Password",
+              "timedOut": null,
+              "duration": 3262,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Fetching the data from Fixture file\ncy.login(this.data.email2, this.data.password2);\ncy.task('log', 'Login into the website using valid Username and Invalid Password');\ncy.get(Cypress.env('InvalidLoginmsg')).should('have.text', 'Invalid password.');\ncy.task('log', 'Invalid password text is visible');",
+              "err": {},
+              "uuid": "6097ed3c-28cf-4ac1-ae75-6ee0980c15ef",
+              "parentUUID": "391b7b90-5a27-4c63-be1b-284bb6afa0b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testing Invalid Username",
+              "fullTitle": "Testing Login Functionality of Salesworx Testing Invalid Username",
+              "timedOut": null,
+              "duration": 4944,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Fetching the data from Fixture file\ncy.login(this.data.email3, this.data.password3);\ncy.task('log', 'Login into the website using Invalid Username and valid Password');\ncy.get(Cypress.env('InvalidLoginmsg')).should('have.text', 'Invalid user name.');\ncy.task('log', 'Invalid user name text is visible');",
+              "err": {},
+              "uuid": "9f1f8b63-0088-47d6-a3e0-b85c1cdd1dc6",
+              "parentUUID": "391b7b90-5a27-4c63-be1b-284bb6afa0b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "670946b4-d7d5-4f88-ba96-cbdc7d1abb47",
+            "6097ed3c-28cf-4ac1-ae75-6ee0980c15ef",
+            "9f1f8b63-0088-47d6-a3e0-b85c1cdd1dc6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 53796,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

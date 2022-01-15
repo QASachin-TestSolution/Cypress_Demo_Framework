@@ -1,0 +1,151 @@
+[ {
+  "uid" : "e44a93ed74b25eab",
+  "name" : "Verify Order from order reports at admin side",
+  "time" : {
+    "start" : 1632817042116,
+    "stop" : 1632817123534,
+    "duration" : 81418
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e0a12b4c4905c5",
+  "name" : "Editing Order",
+  "time" : {
+    "start" : 1632816773109,
+    "stop" : 1632816882550,
+    "duration" : 109441
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d1246550755e83b",
+  "name" : "Editing Return",
+  "time" : {
+    "start" : 1632817553281,
+    "stop" : 1632817662835,
+    "duration" : 109554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "442dc347d7e20c02",
+  "name" : "Sending push Notificaion to user",
+  "time" : {
+    "start" : 1632816309254,
+    "stop" : 1632816387070,
+    "duration" : 77816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5abf377d493bcdb3",
+  "name" : "Creating Sales return",
+  "time" : {
+    "start" : 1632817279408,
+    "stop" : 1632817448036,
+    "duration" : 168628
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11e11931ab6fbc61",
+  "name" : "Creatng Order using Order Template",
+  "time" : {
+    "start" : 1632817135385,
+    "stop" : 1632817263913,
+    "duration" : 128528
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af857c720961815e",
+  "name" : "Testing Invalid Password",
+  "time" : {
+    "start" : 1632816441714,
+    "stop" : 1632816451466,
+    "duration" : 9752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da94f7092ce19892",
+  "name" : "Verifying that user received the message",
+  "time" : {
+    "start" : 1632816268970,
+    "stop" : 1632816292831,
+    "duration" : 23861
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4e836e308334fb8",
+  "name" : "Creatng Bonus Order",
+  "time" : {
+    "start" : 1632816917378,
+    "stop" : 1632817041722,
+    "duration" : 124344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b64f932e2c22e87c",
+  "name" : "Verify Order from order reports at admin side",
+  "time" : {
+    "start" : 1632816636684,
+    "stop" : 1632816728649,
+    "duration" : 91965
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8c906b46a01411",
+  "name" : "Testing Valid Login",
+  "time" : {
+    "start" : 1632816405826,
+    "stop" : 1632816441540,
+    "duration" : 35714
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86cbcbdc4da257c4",
+  "name" : "Creating New Order Entry",
+  "time" : {
+    "start" : 1632816483654,
+    "stop" : 1632816635961,
+    "duration" : 152307
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be92db3bb5bc12a0",
+  "name" : "Sending New Message to user from admin",
+  "time" : {
+    "start" : 1632816131449,
+    "stop" : 1632816268781,
+    "duration" : 137332
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d21ae7005ce2c3d9",
+  "name" : "Testing Invalid Username",
+  "time" : {
+    "start" : 1632816451538,
+    "stop" : 1632816460230,
+    "duration" : 8692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95f1767768cf8b62",
+  "name" : "Verify Order from order reports at admin side",
+  "time" : {
+    "start" : 1632817448523,
+    "stop" : 1632817534920,
+    "duration" : 86397
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

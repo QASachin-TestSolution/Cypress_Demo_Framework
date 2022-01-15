@@ -1,0 +1,19 @@
+{
+    "Comment_Organizations": "Pooja-20Oct_Merketing, Pooja_20Oct_Common,Site - 5831,Site - 5800",
+
+    "Organization": "Pooja_20Oct_Common",
+    "LocationType": "Doctor",
+    "Phone": "8000000000",
+    "Name": "CyLocation",
+    "Email":"Cyloc@mailinator.com",
+    "Area":"Abu Dhabi",
+    "Road":"Golf",
+    "Locality": "Test Address1",
+    "City": "Abu Dhabi",
+    "PostalCode": "4213",
+    "State": "Tstate",
+    "Title": "Mrs",
+    "ContactName":"Contact1",
+    "ContactEmail":"Contact1@mailinator.com",
+    "Location": "CypressUsingLoc"
+}

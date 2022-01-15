@@ -1,0 +1,11 @@
+{   "_comment": "if you type no in date value then by defualt current date is selected there",
+    
+    "WantToSelectStartDate":"yes",
+    "StartDate"   : "28-09-2021",
+    "WantToSelectExpiryDate":"yes",
+    "ExpiryDate"  : "05-10-2021",
+
+    "Title"       : "NoRemark",
+    "Message"     : "NoRemark",
+    "SendToReceipient"   :  "Rashid Tharammal"
+  }

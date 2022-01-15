@@ -1,0 +1,27 @@
+{
+    "OrderType": "Normal",
+    "Customer": "Al Badar Pharmacy (Shj)-Rolla",
+    "Category" :"JUL - JDS ABD(02)",
+    "CustomerRemarks": "NoRemark",
+    "OrderRemarks": "NoRemark",
+    "WanttochangeShippingDate":"No",
+    "Date"   :  "30-10-2021",
+    "CustPONo" : "",
+    "OrdersNOEOrdersSkipConsolidation": "No",
+    "WholesaleOrderCheckbox":"yes",
+    "Productcode":"UB108",
+    "OrderQty" : "20",
+    "BonusQty" :"",
+    "FOCQty" : "",
+  
+
+    "WantToChangeDefaultStartDateTODate":"NO",
+    "StartDate":"16-09-2021",
+    "EndDate":"17-09-2021",
+
+    "SearchByOrg" :"Site - 5831",
+    "SearchByFSR" :"Rashid"
+     
+
+
+  }

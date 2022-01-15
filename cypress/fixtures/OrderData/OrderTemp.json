@@ -1,0 +1,20 @@
+{
+"OrderType": "Normal",
+"Customer": "1157",
+"Template":"sachin",
+"WantToAddCustomerReamrks":"yes",
+"CustomerRemarks": "TestRemark",
+"WantToAddOrderReamrks":"yes",
+"WantToAddCustomerPNO":"no",
+"OrderRemarks": "TestRemark",
+"Date"   :  "10-09-2021",
+"CustPONo" : "Test",
+"OrdersNOEOrdersSkipConsolidation": "No",
+"WholesaleOrderCheckbox":"yes",
+"ProductName":"DORA 12X150 GM",
+"OrderQty" : "100",
+"BonusQty" :"",
+"FOCQty" : ""
+
+
+}
